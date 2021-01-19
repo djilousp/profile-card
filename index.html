@@ -1,35 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Victor Crest
-  26
-  London
+    <title>Frontend Mentor | Profile card component</title>
 
-  80K
-  Followers
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="svg-container">
+      <div class="upper-svg">
+        <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a">
+              <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+              <stop stop-color="#53FFEE" offset="99.94%" />
+            </linearGradient>
+          </defs>
+          <ellipse
+            fill="url(#a)"
+            transform="rotate(-135 489 489)"
+            cx="489"
+            cy="489"
+            rx="489"
+            ry="488"
+            fill-rule="evenodd"
+            opacity=".5"
+          />
+        </svg>
+      </div>
+      <div class="bottom-svg">
+        <svg width="978" height="978" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a">
+              <stop stop-color="#0989B4" stop-opacity="0" offset="0%" />
+              <stop stop-color="#53FFEE" offset="99.94%" />
+            </linearGradient>
+          </defs>
+          <ellipse
+            fill="url(#a)"
+            transform="scale(1 -1) rotate(45 1669.55 0)"
+            cx="489"
+            cy="489"
+            rx="489"
+            ry="488"
+            fill-rule="evenodd"
+            opacity=".25"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="upper-container">
+        <embed src="./images/bg-pattern-card.svg" />
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <div class="image-container">
+          <img src="images/image-victor.jpg" alt="profile picture" />
+        </div>
+      </div>
+      <div class="bottom-container">
+        <div class="bio">
+          <h1>Victor Crest <span>26</span></h1>
+          <h3>London</h3>
+        </div>
+        <div class="stats">
+          <div class="followers">
+            <h1>80K</h1>
+            <h3>Followers</h3>
+          </div>
+          <div class="likes">
+            <h1>803K</h1>
+            <h3>Likes</h3>
+          </div>
+          <div class="photos">
+            <h1>1,4K</h1>
+            <h3>Photos</h3>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Djilou</a>.
+    </div>
+  </body>
 </html>
